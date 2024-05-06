@@ -1,1 +1,3 @@
-# software-dev-10
+# software-dev-010
+
+Demos from the classes. ᕙ(`▽´)ᕗ
