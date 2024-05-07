@@ -1,0 +1,17 @@
+/* element selector */
+body {
+    background-color: tomato;
+    font-family: monospace;
+    color: white;
+}
+
+
+.hero-image {
+    height: 300px;
+    width: 400px;
+}
+
+.fiend-image {
+    height: 100px;
+    width:30px;
+}
