@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 * {
     margin: 0px;
+}
+
+body {
+    /* display: inline; */
+    /* color: aliceblue; */
 }
 
 
@@ -15,6 +22,7 @@ p {
     border: 5px rgb(127, 189, 33) solid;
     margin: 5px;
     width: 150px;
+    font-family: "Nabla", system-ui;;
     /* border-style: solid;
     border-color: red;
     border-inline-width: 1px; */
@@ -30,3 +38,15 @@ p {
 }
 
 /* display: block / display:inline */
+
+/* .text {
+    font-family: monospace;
+} */
+
+.highlight {
+    background-color: hotpink;
+}
+
+.container {
+    display: flex;
+}

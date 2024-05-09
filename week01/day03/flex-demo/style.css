@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inconsolata:wght@200..900&display=swap');
+
+body {
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.txt-500 {
+    font-size: 20px;
+    color: white;
+    font-family: "Inconsolata", monospace;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1531734219632-53cf294d6145?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.nav-bar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+    
+}
+
+.nav-links > li {
+    padding-left: 10px;
+}
+
+
+.fact-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 15px;
+    min-height: 20vh;
+    max-height: 30vh;
+    width: 15vw;
+    overflow:auto;
+}
+
+.fact-card p {
+    margin-top: 5px;
+}
+
+
+.facts-container {
+    display: flex;
+}
+
+.footer-info {
+    display: flex;
+}
+
+.footer-info > li {
+    list-style: none;
+    margin-left: 5px;
+}
