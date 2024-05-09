@@ -1,0 +1,43 @@
+.box {
+    height: 150px;
+    width: 150px;
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tree {
+    background-image: url('https://images.unsplash.com/photo-1482148454461-aaedae4b30bb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.america {
+    background-image: url('https://images.unsplash.com/photo-1498855926480-d98e83099315?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.beach {
+    background-image: url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.snow {
+    background-image: url('https://images.unsplash.com/photo-1418985991508-e47386d96a71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+.flower {
+    background-image: url('https://images.unsplash.com/photo-1618468355232-88a329df0182?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
