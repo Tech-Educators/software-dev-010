@@ -63,12 +63,16 @@ const nummber1 = 'mmm'
 console.log(nummber1)
 
 
-console.log()
-let 
-const
+// console.log()
+// let 
+// const
 
 // three data types
 
 // strings = ''
 // numbers = they're numbers = 52
 // booleans = true/false values 
+
+
+let myNameIsSam = 'Sam' 
+let myHobbies
