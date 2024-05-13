@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+* {
+    margin: 0px;
+}
+
+.feature {
+    height: 100vh;
+}
+
+.aloe {
+    background-image: url('https://www.amwua.org/uploads/1567202061bbb4e4b6.jpg');
+}
+
+.evergreen {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/BERaz9BVmj5FWXUyCPa78C-1920-80.jpg.webp');
+}
+
+.pink {
+    background-image: url('https://www.mapro.com/cdn/shop/articles/tradescantia-zebrina-formerly-known-as-zebrina-pendula-purple-wandering-jew.jpg?v=1707202699&width=1500');
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links > li > a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+.header {
+    position: fixed;
+}
+
+.footer {
+    background-color: black;
+}
+
+.feature-text-container {
+    position: relative;
+    /* position: absolute; */
+    top: 350px;
+    left: 15px;
+}
+
+.txt-500 {
+    color: white;
+    font-family: "Yatra One", system-ui;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-read-more {
+    height: 40px;
+    width: 90px;
+    background-color: #00000000;
+    border: white solid 2px;
+    color: white;
+}
+
+.btn-read-more:hover {
+    background-color: black;
+    transition: 0.5s;
+}
