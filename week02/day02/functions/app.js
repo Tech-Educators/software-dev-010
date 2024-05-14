@@ -42,3 +42,8 @@ function weatherChecker(currentWeather) {
 // calling a function with arguments.
 weatherChecker('snowy') // currentWeather = 'snowy'
 weatherChecker('sunny') // currentWeather = 'sunny'
+
+
+function sayHelloTo(userName) {
+    console.log("Hello " + userName + "!")
+}
