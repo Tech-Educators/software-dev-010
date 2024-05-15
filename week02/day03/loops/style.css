@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Underdog&display=swap');
+
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+.header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    background-color: black;
+}
+
+body {
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(0,0,0,1) 100%);
+    width: 100vw;
+}
+
+.txt-white-header {
+    color: white;
+    font-family: "Syne Mono", monospace;
+    font-size: 32px;
+}
+
+.txt-white-sub-header {
+    color: white;
+    font-family: "Syne Mono", monospace;
+    font-size: 8px;
+}
+
+.txt-500 {
+    color: white;
+    font-family: "Syne Mono", monospace;
+    font-size: 16px;
+    text-align: center;
+}
+
+.glitter {
+    background: url('https://i.giphy.com/17lVPLmmKXyDckRARQ.webp');
+    height: 70vh;
+    width: 100vw;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0px 30px;
+}
+
+.main > p {
+    width: 50vw;
+}
+
+#hobbies-container {
+    width: 49vw;
+}
