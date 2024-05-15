@@ -28,7 +28,8 @@ console.log(coolAnimal.cute)
 let myHobbies = {
     type: 'Gaming',
     location: 'Home',
-    rating: 3
+    rating: 3,
+
 }
 
 console.log(myHobbies)
@@ -36,3 +37,5 @@ console.log(myHobbies)
 myHobbies.controller = 'gamepad'
 
 console.log(myHobbies)
+
+
