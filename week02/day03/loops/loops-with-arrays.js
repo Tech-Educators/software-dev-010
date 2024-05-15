@@ -33,3 +33,45 @@ for (let i = 0; i < hobbies.length; i++) {
 // forgot to link javascript?
 // forgot to put a 'defer' attribute in our script tag.
 // or we made a typo when selecting the element (curse those 's''s)
+
+
+// addEventListerns in JS 
+
+// new Array != let x = []
+
+// new A
+
+
+function runAnimals(animalFunc) {
+    animalFunc()
+}
+
+runAnimals(chicken)
+runAnimals(fox)
+
+
+function chicken() {
+    console.log('chicken clucks')
+}
+
+function fox() {
+    console.log('What do they sound like???!')
+}
+
+
+let array = [1,2,3,4,5]
+
+console.log()
+let reduced = array.reduce(reducerFunc, 0)
+console.log(reduced)
+
+function reducerFunc(previousValue, CurrentValue) {
+    
+    return previousValue + CurrentValue
+}
+
+// given an strings of numbers /9999999
+// (000) 000-00000
+
+
+six(times(seven()))
