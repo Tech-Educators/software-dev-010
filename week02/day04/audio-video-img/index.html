@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <audio src="./AV/goose_sounds.mp3" controls></audio>
+    <audio id='goose_sounds' src="./AV/goose_sounds.mp3" controls class="test"></audio>
+
+    <section class="player">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stopBtn">Stop</button>
+        <button id="rewindBtn">Rewind 10s</button>
+        <button id="skipBtn">Skip 10s</button>
+    </section>
+
     <video src="./AV/googse.mp4" controls></video>
     <img src="https://images.unsplash.com/photo-1570586790305-4f115cb439c6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A goose playfully close to the camera, with another behind it.">
 

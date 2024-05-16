@@ -1,9 +1,19 @@
 video {
-    height: 600px;
+    height: 400px;
     width: auto;
 }
 
 img {
     height: 60px;
     width: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > * {
+    margin: 20px
 }
