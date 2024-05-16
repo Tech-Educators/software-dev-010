@@ -53,3 +53,4 @@ let myBlogPost = {
 for (let i = 0; i < myBlogPost.tags.length; i++) {
     console.log(myBlogPost.tags[i])
 }
+
