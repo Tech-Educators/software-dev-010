@@ -21,46 +21,8 @@ let images = [
     }
 ]
 
-const thumbContainer = document.getElementById('thumb-container')
-const displayImg = document.getElementById('display-img')
-
-// a global variable to store the currentimgIndex (the big img)
-let currentImgIndex = 0;
-
-// buttons
-const prevBtn = document.getElementById('buttonPrev')
-const nextBtn = document.getElementById('buttonNext')
-
-// aria
-
-const aria = document.getElementById('announcer')
-
-
-// i have a varible which always is the current index in my array that is being displayed as the 'main' image.
-
-prevBtn.addEventListener('click', function (){
-    selectImageBasedOnIndex(-1)
-})
-
-nextBtn.addEventListener('click', function() {
-    // add 1
-    selectImageBasedOnIndex(1)
-})
-
-function selectImageBasedOnIndex(newIndexValue) {
-    // I need to update the current img index.
-    currentImgIndex = currentImgIndex + newIndexValue
-
-    if (currentImgIndex > images.length - 1) {
-        currentImgIndex = 0;
-    }
-    if (currentImgIndex < 0) {
-        currentImgIndex = images.length - 1
-    }
-    createDisplayImg(images[currentImgIndex])
-}
-
-
+let thumbContainer = document.getElementById('thumb-container')
+let displayImg = document.getElementById('display-img')
 
 function createThumbnails(arrayOfImages) {
     for (let i = 0; i < arrayOfImages.length; i++) {
@@ -72,22 +34,13 @@ function createThumbnails(arrayOfImages) {
         imgElem.src = arrayOfImages[i].url
         imgElem.alt = arrayOfImages[i].alt
 
-
-        /* 
-        
-        ADD THIS TO MAKE THE IMAGES 'FOCUSABLE' WITH PRESSING TAB - THAT WILL AUTOMATICALLY READ OUT THE ALT TEXT!!
-        */
-        imgElem.setAttribute('tabindex', '0')
-
         // add a class to an element using javascript
         imgElem.classList.add('thumb-img')
         // 
         imgElem.addEventListener('click', function() {
-            // console.log(imgElem)
+            console.log(imgElem)
             console.log(arrayOfImages[i])
             // when the user click on an image, we're going to call the function responsible for creating the 'big' images - providing it with an argument of the image the user clicked on.
-            currentImgIndex = i
-            console.log(currentImgIndex)
             createDisplayImg(arrayOfImages[i])
         })
 
@@ -99,8 +52,6 @@ createThumbnails(images)
 
 
 function createDisplayImg(imageObj) {
-    aria.textContent = imageObj.alt
-    // clearing the current HTML before I add to it.
     displayImg.innerHTML = ''
     // create an image elemnt
     let imgTag = document.createElement('img')
