@@ -1,0 +1,14 @@
+.thumb-container {
+    height: 20vh;
+    display: flex;
+}
+
+.thumb-img {
+    width: auto;
+    height: 15vh;
+}
+
+.hero-img {
+    height: 50vh;
+    width: auto;
+}
