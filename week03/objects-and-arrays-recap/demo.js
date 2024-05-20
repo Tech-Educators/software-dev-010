@@ -36,32 +36,60 @@ let ourCohortsMovies = [
 
 
 
-let perfectBlue = {
-        name: 'Perfect Blue', 
-        year: 1997
+
+// perfectBlue.name // 'Perfect Blue"
+// perfectBlue.year // 1997
+
+// // create html tags
+// let header = document.createElement('h2')
+// let pTag = document.createElement('p')
+
+// // give the header and pTag content.
+// header.textContent = perfectBlue.name
+// pTag.textContent = perfectBlue.year
+
+// // last step - add it to the dom (actually add it to our html)
+// let container = document.getElementById('movie-info')
+
+// container.appendChild(header)
+// container.appendChild(pTag)
+
+
+let pulpFiction = {
+    name: 'Pulp Fiction',
+    year: 1994
 }
 
-perfectBlue.name // 'Perfect Blue"
-perfectBlue.year // 1997
-
-// create html tags
-let header = document.createElement('h2')
-let pTag = document.createElement('p')
-
-// give the header and pTag content.
-header.textContent = perfectBlue.name
-pTag.textContent = perfectBlue.year
-
-// last step - add it to the dom (actually add it to our html)
-let container = document.getElementById('movie-info')
-
-container.appendChild(header)
-container.appendChild(pTag)
+let perfectBlue = {
+    name: 'Perfect Blue', 
+    year: 1997
+}
 
 
 // create an object with 3 properties
 // create html tags for the 3 propties
 // display them on the dom.
+
+// paramaters are the placeholder for the eventual argument. (the real/final value)
+function displayObject(object) {
+    const nameTag = document.createElement('h3')
+    const yearTag = document.createElement('p')
+
+    nameTag.innerText = object.name
+    yearTag.innerText = object.year
+
+    const infoContainer = document.getElementById('movie-info-function')
+    infoContainer.appendChild(nameTag)
+    infoContainer.appendChild(yearTag)
+}
+
+// arugments are things we give to a function - they become the 'final' value of a parameter
+displayObject(perfectBlue)
+displayObject(pulpFiction)
+
+displayObject({name: 'Primer', year: 2008})
+
+displayObject({name: 'sam', animal: 'test'})
 
 
 // create an array
@@ -76,3 +104,56 @@ container.appendChild(pTag)
 //     // p.innerText = array[i]
 //     // append to the dom
 // }
+
+const esports = ['League of Legends', 'Dota2', 'Volorant', 'CS:GO', 'Tekken 8']
+
+const esportsContainer = document.getElementById('esports')
+
+for (let i = 0; i < esports.length; i++) {
+    let pTag = document.createElement('p')
+    pTag.innerText = esports[i]
+    esportsContainer.appendChild(pTag)
+}
+
+
+let h1 = document.createElement('h1')
+document.body.appendChild(h1)
+
+
+// write function that creates a button on the page - when you click the button it alerts the user theyve clicked a button.
+
+// .addEventListener for this.
+// create the button with javascript.
+
+
+// addEventListern() (add it to the button variable) - it's takes as the first arguemnt the evet we're listening for and something called a 'callback function'.
+
+// button.addEventListner('click', function() {
+//    // figure out how to alert the user
+//    // search : javascript alert function.
+// }
+
+function createButtonAndAlert() {
+    // create the button
+
+    const button = document.createElement('button')
+    button.textContent = 'click me!'
+    document.body.appendChild(button)
+
+    // takes two arguments
+    // we don't add parenthesis to the 'callback' function (handleClick) otherwise it would run itself immediately instead of waiting for the click event.
+    button.addEventListener('click', handleClick)
+
+    // we can write 'anonymous' functions straight in the event listener.
+    button.addEventListener('click', function () {
+        alert('You clicked me!')
+    })
+
+}
+
+function handleClick() {
+    console.log('A click happened so now Im running')
+    console.log('Clicked!')
+}
+
+createButtonAndAlert()
