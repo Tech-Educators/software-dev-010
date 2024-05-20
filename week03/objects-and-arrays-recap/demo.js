@@ -62,3 +62,17 @@ container.appendChild(pTag)
 // create an object with 3 properties
 // create html tags for the 3 propties
 // display them on the dom.
+
+
+// create an array
+// use a for loop to go through the array
+// in the for loop make a p tag and set the text content to the string in that iteration of the array.
+// append to the dom. 
+
+// array = ['hello', 'how', 'are', 'you']
+
+// for (let i = 0; something; sometthing) {
+//     // make a p tag
+//     // p.innerText = array[i]
+//     // append to the dom
+// }
