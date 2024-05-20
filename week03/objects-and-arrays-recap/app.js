@@ -1,0 +1,42 @@
+const trees = [
+    {
+        name: "Oak",
+        scientificName: "Quercus",
+        height: "70-100 feet",
+        nativeRegions: ["Northern Hemisphere"],
+        leafType: "Deciduous",
+        lifespan: "200-300 years",
+    },
+    {
+        name: "Maple",
+        scientificName: "Acer",
+        height: "30-145 feet",
+        nativeRegions: ["Asia", "Europe", "North America", "Northern Africa"],
+        leafType: "Deciduous",
+        lifespan: "100-200 years",
+    },
+    {
+        name: "Pine",
+        scientificName: "Pinus",
+        height: "50-150 feet",
+        nativeRegions: ["Northern Hemisphere"],
+        leafType: "Evergreen",
+        lifespan: "100-1000 years",
+    },
+    {
+        name: "Birch",
+        scientificName: "Betula",
+        height: "40-70 feet",
+        nativeRegions: ["Northern Hemisphere"],
+        leafType: "Deciduous",
+        lifespan: "30-50 years",
+    },
+    {
+        name: "Cherry",
+        scientificName: "Prunus",
+        height: "20-30 feet",
+        nativeRegions: ["Northern Hemisphere"],
+        leafType: "Deciduous",
+        lifespan: "20-30 years",
+    },
+];
