@@ -40,3 +40,41 @@ const trees = [
         lifespan: "20-30 years",
     },
 ];
+
+
+
+let myTestArray = [
+    {
+        name: 'Sam',
+        species: 'Human'
+    },
+    {
+        name: 'Darcy',
+        species: 'Dog'
+    },
+    {
+        name: 'Tulip',
+        species: 'Cat'
+    }
+]
+
+// forEach is like a for loop
+
+// on the name of the array I want to loop throught.
+let animalInfoContainer = document.getElementById('animal-info')
+
+myTestArray.forEach(function(object) {
+    let nameTag = document.createElement('p')
+    let speciesTag = document.createElement('p')
+
+    nameTag.innerText = object.name
+    speciesTag.innerText = object.species
+
+    animalInfoContainer.appendChild(nameTag)
+    animalInfoContainer.appendChild(speciesTag)
+}) 
+
+// create an array of three objects
+// the three objects should share the same properties
+
+// use .forEach to create a p tag for each property, set the content of the p tag to be the current objects information, and append to the page.
