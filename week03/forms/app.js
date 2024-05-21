@@ -19,8 +19,10 @@ function handleSubmit(event) {
     // we do that with this line:
     const userInputInObject = Object.fromEntries(userInput)
 
+    // document.body.style.backgroundColor = event.target.color.value
+    document.body.style.backgroundColor = userInputInObject.color
     console.log(userInputInObject)
-    console.log(event.target.email.value)
+    console.log(event)
     console.log('submitted the form')
 }
 
@@ -37,3 +39,9 @@ function handleSubmit(event) {
 // form.addEventListener('submit', function() {
 //     console.log('hello')
 // })
+
+let img = document.getElementById('img')
+
+img.addEventListener('click', function(event) {
+    console.log(event)
+})

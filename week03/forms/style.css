@@ -1,0 +1,17 @@
+body {
+    font-family: monospace;
+    color: black;
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+}
+
+img {
+    width: 40px;
+    height: auto;
+}

@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Forms forms forms</title>
 </head>
 <body>
-    <h2>There are a few ways of getting information from forms:</h2>
+    <div>
+        <h2>There are a few ways of getting information from forms:</h2>
+        <p>We can use the formData method - creating new FormData then turning that into an object</p>
+        <p>Or we can use the 'event' object and search through it to get the values from each of the input fields.</p>
+        <p>I prefer the first</p>
+        <p>Remember to add a 'name' attribute to the inputs!</p>
+    </div>
 
     <form id="form">
+        <img id="img" src="https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_2700,h_2700,c_limit/chocolate-chip-cookie.jpg" class="cookie-img">
         <label for="email">Email:</label>
-        <input placeholder="enter your email" required id="email" name="email"/>
-        <label for="password">Password</label>
+        <input placeholder="enter your email" required type='email' id="email" name="userEmail"/>
+        <label for="password">Password:</label>
         <input placeholder="password" type="password" required id="password" name="password" />
+        <label for="color">Select a colour:</label>
+        <input type="color" name="color" id="color"/>
         <button type="submit">Submit</button>
     </form>
 </body>
