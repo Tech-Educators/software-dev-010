@@ -43,3 +43,12 @@ function logsParam(param) {
 }
 
 button.classList.toggle()
+
+
+
+// what do you know about - this ?
+// avoid asking thing that highlight gaps
+// how do we build on this. 
+// come up of things 
+
+// struggling with intuation and recall and 
