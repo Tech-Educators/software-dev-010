@@ -7,7 +7,7 @@ const shop = document.getElementById('shop')
 
 let cookies = 100;
 let purchasedItems = []
-
+let storeItems = []
 
 cookieImg.addEventListener('click', function() {
     cookies += 1
@@ -17,8 +17,9 @@ cookieImg.addEventListener('click', function() {
 async function fetchCookieData() {
     const response = await fetch('https://cookie-upgrade-api.vercel.app/api/upgrades') // get data/ get a response object
     // tell my javascript how to read the reponse object
-    const upgrades = await response.json()
-    renderShop(upgrades)
+    storeItems = await response.json()
+    localStorage.setItem('storeItems', JSON.stringify(storeItems))
+    renderShop(storeItems)
 }
 
 
@@ -44,7 +45,8 @@ function purchaseUpgrade(itemPurchased) {
     cookies -= itemPurchased.cost
     // add to an arary of purched items
     purchasedItems.push(itemPurchased)
-    console.log(purchasedItems)
+    save()
+    updateUI()
 }
 
 function renderShop(storeItems) {
@@ -59,9 +61,9 @@ function renderShop(storeItems) {
         let increase = document.createElement('p')
         increase.innerText = item.increase + ' +cps'
 
-        // let count = document.createElement('p')
-        // // count.innerText = getItemCount(item) + 'bought'
-        // // count.setAttribute('id', 'itemCount')
+        let count = document.createElement('p')
+        count.innerText = getItemCount(item) + 'bought'
+        count.setAttribute('id', 'itemCount')
 
         let button = document.createElement('button')
         button.innerText = 'buy'
@@ -138,6 +140,10 @@ function game() {
 function updateUI() {
     numberOfCookies.innerText = cookies
     cookiesPerSecond.innerText = getCookiesPerSecond()
+    const storeItems = JSON.parse(localStorage.getItem('storeItems'))
+    if (storeItems) {
+        renderShop(storeItems)
+    }
     // document.body.shop.cookieStoreItem.count = 
     
 }
