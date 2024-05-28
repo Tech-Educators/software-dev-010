@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > * {
+    margin: 5px
+}
+
+#resetButton {
+    width: 60px;
+}
