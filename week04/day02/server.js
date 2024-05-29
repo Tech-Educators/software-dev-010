@@ -5,6 +5,11 @@ import express from "express"
 const app = express()
 const PORT = 8080;
 
+// to allow our server to read incoming JSON (from the request.body from the client)
+
+// this line allows the server to read incoming JSON.
+app.use(express.json())
+
 // always use the app object
 // and then a method - the method name will be whatever http method you're trying to responsd to
 // first part is the route we want to reponse to the user going to
@@ -31,6 +36,14 @@ app.get('/fish', (request, response) => {
 // one for dogs
 // one for parrots
 // one for crocs (shoes or animal)
+
+// POST http method
+
+// difference with post is that I want the information the client sent - so for the first time, we're going to use the request object.
+app.post('/cats', function(request, response) {
+    console.log(request.body)
+    response.json({"you sent this info to me:" : request.body})
+})
 
 // we are going to listen for incoming request on port 8080
 // my server is running on localhost:8080
