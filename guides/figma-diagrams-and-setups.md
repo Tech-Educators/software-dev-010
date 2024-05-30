@@ -3,7 +3,7 @@
 
 Remember to include 
 `app.use(express.json())`
-at the top!
+after `const app = express()` in your server.js file 
 
 ![Setting up express](basic-express-setup.png)
 
