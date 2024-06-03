@@ -17,23 +17,23 @@
 2. Each team member must clone the repository:
 
 ```sh
-   $ git clone <repository_url>
-   $ cd <repository_name>
+   git clone <repository_url>
+   cd <repository_name>
 ```
 
 3. Go into the server folder and install the necessary node modules: 
 
 ```sh
-$ cd server
-$ npm install
+cd server
+npm install
 ```
 4. Add a .env file to the server folder with the necessary environment variables.
 
 5. Similarly, go into the client folder and install the necessary node modules:
 
 ```sh
-$ cd ../client
-$ npm install
+cd ../client
+npm install
 ```
 
 ## Setting Up Your Branches
