@@ -47,6 +47,6 @@ app.post('/cats', function(request, response) {
 
 // we are going to listen for incoming request on port 8080
 // my server is running on localhost:8080
-app.listen(PORT, () => {
+app.listen(8080, () => {
     console.log(`server running on ${PORT}`)
 })

@@ -1,14 +1,14 @@
 {
   "dependencies": {
+    "core-js": "^3.37.1",
     "express": "^4.19.2"
   },
   "scripts": {
-    "start": "node server.js"  
+    "start": "node server.js"
   },
   "name": "day02",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
