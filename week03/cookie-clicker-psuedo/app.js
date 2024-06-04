@@ -44,3 +44,13 @@ function renderShop() {
     })
 }
 
+async function fetchData() {
+    let response = await fetch('https://cookie-upgrade-api.vercel.app/api/upgrades')
+
+    displayShop(json)
+}
+
+
+function displayShop(array) {
+
+}
