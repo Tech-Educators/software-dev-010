@@ -2,6 +2,8 @@
 
 ### General
 
+[Figma Diagrams](./figma-diagrams-and-setups.md)
+
 [File Paths](./filepaths.md)
 
 ### CSS
@@ -13,3 +15,5 @@
 [Git Basics](./GIT_BASICS.md)
 
 [Terminal Commands](./terminal_commands.md)
+
+[Group Work - Git Guide](./git-as-a-group.md)

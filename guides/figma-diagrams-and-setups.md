@@ -1,10 +1,23 @@
+# Diagrams and Guides
 
-![vite-setup](vite-setup.png)
+![vite-setup](figma-images/vite-setup.png)
 
-Remember to include 
+### Setting up an Express Server
+
+Remember to include
 `app.use(express.json())`
-after `const app = express()` in your server.js file 
+after `const app = express()` in your server.js file
 
-![Setting up express](basic-express-setup.png)
+![Setting up express](figma-images/basic-express-setup.png)
 
-![Anatomy of a route handler](express-route-handler.png)
+### Anatomy of a Route Handler
+
+![Anatomy of a route handler](figma-images/express-route-handler.png)
+
+### Vanilla JavaScript - How to set up a project on GitHub
+
+![Vanilla JS - Cloning a Repo](figma-images/vanilla-js-cloning-repo.png)
+
+### Vite - How to set up a project on GitHub
+
+![Uploading Vite to GitHub](./figma-images/vite-project-start.png)
