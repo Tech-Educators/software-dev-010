@@ -1,3 +1,5 @@
+import './BatCard.css'
+
 // we do not have to write the word props
 // what ever we write in the ()'s will always be an object of whatever information we passs to the BatCard Component
 export function BatCard(props) {
@@ -13,7 +15,7 @@ export function BatCard(props) {
     // }
 
     return (
-        <div>
+        <div className="card">
             <h2>{props.bat_name}</h2>
             <img src={props.img_url} alt={`A photo of ${props.bat_name}`} />
             <p>{props.bat_location}</p>
