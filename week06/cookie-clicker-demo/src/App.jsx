@@ -52,8 +52,18 @@ export default function App() {
       <button onClick={increaseCookies}>I am a cookie</button>
       <p>Cookies: {cookies}</p>
       <p>Cookies Per Second (cps): {cps}</p>
-      <button onClick={() => buyUpgrade(1, 100)}>Buy Upgrade +1cps</button>
-      <button onClick={() => buyUpgrade(2, 500)}>Buy Upgrade +2cps</button>
+      {/* <button onClick={() => buyUpgrade(1, 100)}>Auto-Clicker</button> */}
+
+      {upgrades.map((upgrade) => {
+        return (
+          <button
+            key={upgrade.id}
+            onClick={() => buyUpgrade(upgrade.increase, upgrade.cost)}
+          >
+            {upgrade.name}
+          </button>
+        );
+      })}
     </div>
   );
 }
