@@ -1,4 +1,24 @@
 import { useState, useEffect } from "react";
+const upgrades = [
+  {
+    id: 1,
+    name: "Auto-Clicker",
+    cost: 100,
+    increase: 1,
+  },
+  {
+    id: 2,
+    name: "Enhanced Oven",
+    cost: 500,
+    increase: 5,
+  },
+  {
+    id: 3,
+    name: "Cookie Farm",
+    cost: 1000,
+    increase: 10,
+  },
+];
 
 export default function App() {
   const [cookies, setCookies] = useState(0);
@@ -19,8 +39,11 @@ export default function App() {
     setCookies(cookies + 1);
   }
 
-  function buyUpgrade() {
-    setCps(cps + 1);
+  function buyUpgrade(increase, cost) {
+    // get more cps
+    setCps(cps + increase);
+    // but it costs us cookies
+    setCookies(cookies - cost);
   }
 
   return (
@@ -29,7 +52,8 @@ export default function App() {
       <button onClick={increaseCookies}>I am a cookie</button>
       <p>Cookies: {cookies}</p>
       <p>Cookies Per Second (cps): {cps}</p>
-      <button onClick={buyUpgrade}>Buy Upgrade</button>
+      <button onClick={() => buyUpgrade(1, 100)}>Buy Upgrade +1cps</button>
+      <button onClick={() => buyUpgrade(2, 500)}>Buy Upgrade +2cps</button>
     </div>
   );
 }
