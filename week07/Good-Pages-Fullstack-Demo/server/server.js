@@ -10,6 +10,7 @@ app.use(express.json())
 app.use(cors())
 dotenv.config()
 
+// for testing/making sure the server works.
 app.get('/', (req, res) => {
     res.json({message: 'This is the root route. My server is working. Huzzah!'})
 })
@@ -52,6 +53,8 @@ app.get('/genres', async (req, res) => {
     res.json(result.rows)
 })
 
+// telling our server WHERE to run on our computer
+// localhost:8080 ?
 app.listen(PORT, () => {
     console.log(`Running on PORT ${PORT}`)
 })

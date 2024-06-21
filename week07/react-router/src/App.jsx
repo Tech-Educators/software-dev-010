@@ -2,6 +2,9 @@ import {Routes, Route, Link} from "react-router-dom"
 import { About } from "./pages/About"
 import {Home} from "./pages/Home"
 
+import BookPage from "./pages/BookPage"
+import Book from "./pages/Book"
+
 export default function App() {
   return (
     <div>
@@ -16,8 +19,14 @@ export default function App() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
-        <Route path='/books' element={<h2>This is totally a rad book gallery! </h2>} />
+        <Route path='/books' element={<BookPage/>}>
+        </Route>
+        <Route path='/books/:book_slug' element={<Book/>} />
       </Routes>
     </div>
   )
 }
+
+// /books/romeo-and-juliet
+// /books/the-merchant-of-venice
+// /books/othello
