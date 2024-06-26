@@ -1,9 +1,42 @@
+import { connect } from "@/utils/connect"
+import { revalidatePath } from "next/cache"
+import { redirect } from "next/navigation"
+
 export default function AddPet() {
+
+    async function handleAddPet(formData) {
+        "use server"
+        console.log(formData)
+    //    const {pet_name, type, breed, habitat, img_url, bio} = formData
+        const pet_name = formData.get('pet_name')
+        const type = formData.get('type')
+        const breed = formData.get('breed')
+        const habitat = formData.get('habitat')
+        const img_url = formData.get('img_url')
+        const bio = formData.get('bio')
+
+        const db = connect()
+        // you write the insert statement
+        db.query(`INSERT INTO 
+                  pets (pet_name, type, breed, habitat, img_url, bio) 
+                  VALUES 
+                  ($1, $2, $3, $4, $5, $6)`, 
+                  [
+                    pet_name, type, breed, habitat, img_url, bio
+                  ]
+                )
+
+       console.log(pet_name, type, habitat, img_url, bio)
+       // make sure the database and the data on the home route are the same
+       revalidatePath('/')
+       // redirect the user back to the home route.
+       redirect('/')
+    }
+
     return (
         <div>
             <h1>Add a new pet:</h1>
-
-            <form className="flex flex-col">
+            <form action={handleAddPet} className="flex flex-col text-black">
                 <label htmlFor='pet_name'>Enter your pets name:</label>
                 <input placeholder="pet name" name="pet_name" id='pet_name'></input>
 
@@ -22,7 +55,7 @@ export default function AddPet() {
                 <label htmlFor='bio'>Enter your pets bio:</label>
                 <input placeholder="bio" name="bio" id='bio'></input>
 
-                <button type="submit">Submit</button>
+                <button type="submit" className="text-white">Submit</button>
             </form>
         </div>
     )
