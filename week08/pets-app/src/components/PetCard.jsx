@@ -9,7 +9,7 @@ export function PetCard({pet}) {
     return (
         <HoverEffect>
             <div className="relative h-52 w-52 overflow-hidden">
-                <Link href={`/${pet.id}`}>
+                <Link href={`/pets/${pet.id}`}>
                     <Image
                     src={pet.img_url} 
                     alt={`${pet.pet_name}, a ${pet.breed}`} 

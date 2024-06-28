@@ -1,4 +1,4 @@
-import { Inter, Kablammo, MedievalSharp, Libre_Barcode_128_Text} from "next/font/google";
+import { Inter, Kablammo, MedievalSharp, Libre_Barcode_128_Text, Sigmar} from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar"
 
@@ -7,6 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 const medeivalSharp = MedievalSharp({weight: "400", subsets: ["latin"]})
 
 export const kablammo = Kablammo({weight: "variable", subsets: ["latin"]})
+
+export const sigmar = Sigmar({weight: '400', subsets: ['latin']})
 
 export const metadata = {
   title: "Create Next App",
