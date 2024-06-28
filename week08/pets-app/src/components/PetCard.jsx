@@ -5,7 +5,6 @@ import Link from "next/link"
 
 // do putting it as a parameter
 export function PetCard({pet}) {
-    // console.log(pet)
     return (
         <HoverEffect>
             <div className="relative h-52 w-52 overflow-hidden">

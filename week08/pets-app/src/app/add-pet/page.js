@@ -6,14 +6,14 @@ export default function AddPet() {
 
     async function handleAddPet(formData) {
         "use server"
-        console.log(formData)
-    //    const {pet_name, type, breed, habitat, img_url, bio} = formData
-        const pet_name = formData.get('pet_name')
-        const type = formData.get('type')
-        const breed = formData.get('breed')
-        const habitat = formData.get('habitat')
-        const img_url = formData.get('img_url')
-        const bio = formData.get('bio')
+        const data = Object.fromEntries(formData)
+        const {pet_name, type, breed, habitat, img_url, bio} = data
+        // const pet_name = formData.get('pet_name')
+        // const type = formData.get('type')
+        // const breed = formData.get('breed')
+        // const habitat = formData.get('habitat')
+        // const img_url = formData.get('img_url')
+        // const bio = formData.get('bio')
 
         
 
@@ -28,7 +28,6 @@ export default function AddPet() {
                   ]
                 )
 
-       console.log(pet_name, type, habitat, img_url, bio)
        // make sure the database and the data on the home route are the same
        revalidatePath('/')
        // redirect the user back to the home route.
@@ -36,7 +35,7 @@ export default function AddPet() {
     }
 
     return (
-        <div>
+        <div className="max-w-56 relative m-0">
             <h1>Add a new pet:</h1>
             <form action={handleAddPet} className="flex flex-col text-black">
                 <label htmlFor='pet_name'>Enter your pets name:</label>

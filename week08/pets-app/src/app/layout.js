@@ -22,7 +22,6 @@ const barcode = Libre_Barcode_128_Text({
 })
 
 export default function RootLayout({ children }) {
-  console.log(medeivalSharp)
   return (
     <html lang="en">
       <body className={`${inter.className} ${barcode.variable}`}>
