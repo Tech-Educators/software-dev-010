@@ -1,6 +1,7 @@
 import { connect } from "@/utils/connect"
 import { revalidatePath } from "next/cache"
 import { redirect } from "next/navigation"
+import Form from "@/components/Form"
 
 export default function AddPet() {
 
@@ -36,28 +37,7 @@ export default function AddPet() {
 
     return (
         <div className="max-w-56 relative m-0">
-            <h1>Add a new pet:</h1>
-            <form action={handleAddPet} className="flex flex-col text-black">
-                <label htmlFor='pet_name'>Enter your pets name:</label>
-                <input placeholder="pet name" name="pet_name" id='pet_name'></input>
-
-                <label htmlFor='type'>Enter your pets type</label>
-                <input placeholder="type..." name="type" id="type"></input>
-
-                <label htmlFor='breed'>Enter your pets breed:</label>
-                <input placeholder="breed..." name="breed" id='breed'></input>
-
-                <label htmlFor='habitat'>Enter your pets habitat:</label>
-                <input placeholder="habitat..." name="habitat" id='habitat'></input>
-
-                <label htmlFor='img_url'>Enter your pets photograph:</label>
-                <input placeholder="URL" name="img_url" id='img_url' type="url"></input>
-
-                <label htmlFor='bio'>Enter your pets bio:</label>
-                <input placeholder="bio" name="bio" id='bio'></input>
-
-                <button type="submit" className="text-white">Submit</button>
-            </form>
+            <Form action={handleAddPet}/>
         </div>
     )
 }
