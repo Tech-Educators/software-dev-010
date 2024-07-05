@@ -11,7 +11,7 @@ export default function Nav() {
                 <div className="flex">
                     <li className="m-4"><Link href='/'>home</Link></li>
                     <li className="m-4"><Link href='/posts'>timeline</Link></li>
-                    <li className="m-4"><Link href='/posts/add-post'> add post</Link></li>
+                    <li className="m-4"><Link href='/posts/add-new-post'> add post</Link></li>
                     <li className="m-4"><Link href='/add-category'> add/view categories</Link></li>
                 </div>
                 <li className="m-4 self-end">
