@@ -19,7 +19,7 @@ export default function Nav() {
                             <UserButton/>
                         </SignedIn>
                         <SignedOut>
-                            <SignInButton afterSignInUrl="/" afterSignUpUrl="/users/sign-up">
+                            <SignInButton mode="modal">
                                 Sign In
                             </SignInButton>
                         </SignedOut>
