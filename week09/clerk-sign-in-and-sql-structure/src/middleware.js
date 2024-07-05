@@ -5,7 +5,7 @@ import {
   
   const isProtectedRoute = createRouteMatcher([
     '/posts/:post_id/edit(.*)',
-    '/posts/submit-post(.*)'
+    '/posts/add-new-post(.*)'
   ]);
 
   // if the next request is to go to a protected route the protechmethod of the auth object is called, redirecting the user to sign in. 

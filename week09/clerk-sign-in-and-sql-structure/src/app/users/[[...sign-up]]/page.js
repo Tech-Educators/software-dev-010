@@ -1,5 +1,6 @@
 import connect from "@/utils/connect"
 import {auth} from '@clerk/nextjs/server'
+import { redirect } from "next/navigation"
 
 export default function Page() {
     // get the current users informtion = we're destructuring out the userID from clerk.
@@ -20,8 +21,9 @@ export default function Page() {
             ($1, $2, $3, $4)`,
             [userId, username, bio, location]
             )
+            redirect('/')
         } catch (error) {
-
+            
         }
 
     }

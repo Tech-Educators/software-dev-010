@@ -1,8 +1,10 @@
 import Link from "next/link"
-import { SignInButton, UserButton, SignedIn, SignedOut, auth} from "@clerk/nextjs";
+import { SignInButton, UserButton, SignedIn, SignedOut} from "@clerk/nextjs";
+import {auth} from '@clerk/nextjs/server'
 
 
 export default function Nav() {
+    const {userId} = auth()
     return (
         <div>
             <ol className={`flex justify-between flex-row p-3`}>
@@ -17,6 +19,7 @@ export default function Nav() {
                     <>
                         <SignedIn>
                             <UserButton/>
+                            <Link href={`/users/user-profile/${userId}`}>Your profile</Link>
                         </SignedIn>
                         <SignedOut>
                             <SignInButton mode="modal">
