@@ -6,6 +6,9 @@ export default async function Page({params}) {
 
     const userInfo = (await db.query(`select * from users where clerk_id=$1`, [params.user_id])).rows[0]
 
+    // show user their own posts
+    const postInfo = (await db.query(`select * from posts where clerk_id=$1`, [params.user_id])).rows[0]
+
     return (
         <div>
             <h2>profile:</h2>
