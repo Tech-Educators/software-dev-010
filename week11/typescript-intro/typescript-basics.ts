@@ -92,3 +92,29 @@ type uniClasses = 'physics' | 'art' | 'keyboard class'
 //const myCourse: uniClasses = 'Physics'
 
 const myCourse: uniClasses = 'art'
+
+
+// I'm going to define a template each of my 'tree' objects need to follow 
+// by creating a 'type' 
+
+type treeTypes = {
+    treeType: 'fir' | 'oak' | 'willow' | 'cherry' | 'silver maple',
+    evergreen: boolean,
+    age: number,
+    img_url?: string
+}
+
+// typing an array of objects
+const myArrayOfTrees: treeTypes[] = [
+    {
+        treeType: 'cherry',
+        evergreen: false,
+        age: 50,
+    },
+    {
+        treeType: 'silver maple',
+        evergreen: false,
+        age: 77,
+        img_url: 'https://images.unsplash.com/photo-1671164616508-a12e4dee7cb3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    }
+]
