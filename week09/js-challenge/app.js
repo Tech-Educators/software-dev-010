@@ -1,28 +1,33 @@
 // 0. Preview
 // remove the first element from the array. 
 let flowers = ['lilly', 'rose', 'sunflower', 'tulips']
-flowers.shift()
-console.log(flowers)
+const firstElem = flowers.shift()
+// console.log(firstElem)
 
 // JavaScript Code Quiz
 
 // 1. Add an element to the end of an array
 let fruits = ["apple", "banana"];
 // Add "orange" to the end of the array
+fruits.push('orange')
+// fruits[fruits.length] = 'orange'
 // Your code here
-console.log(fruits); // Output should be ["apple", "banana", "orange"]
+// console.log(fruits); // Output should be ["apple", "banana", "orange"]
 
 // 2. Remove the last element from an array
 let numbers = [10, 20, 30, 40];
-// Your code here
-console.log(numbers); // Output should be [10, 20, 30]
+numbers.pop() // 40
+
+//console.log(numbers); // Output should be [10, 20, 30]
 
 // 3. Use the `map` method to double the numbers in an array
 let nums = [1, 2, 3, 4];
 // Double each number in the array
 // Your code here
-//
-// console.log(newNums); // Output should be [2, 4, 6, 8]
+const newNums = nums.map(function(element) {
+    return `<p>${element}</p>`
+})
+console.log(newNums); // Output should be [2, 4, 6, 8]
 
 // 4. Combine two arrays into one
 let array1 = [1, 2, 3];
@@ -107,3 +112,6 @@ function typeOfNumber(number) {
 
 // console.log(typeOfNumber(5)) // Odd
 // console.log(typeOfNumber(2)) // Even
+
+
+// book a meeting with many on a thursday somthing like that (databases)
