@@ -19,3 +19,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // 4. Inside the App.jsx, import the <Routes> and <Route> components.
 // 5. Use the <Routes> Component in the jsx of the App.jsx
 // 6. Inside the <Routes> create/use individual Route compoents.
+// refer to app.jsx
+// : denotes that it's a dynamic route - eg books/:id
